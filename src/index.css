@@ -71,15 +71,30 @@ button:focus-visible {
 /** Video Section Layout **/
 #root {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  grid-template-columns: min-content auto;
+  gap: 1rem;
+  width: 100%;
+
+  @media (width > 600px) {
+    gap: 2rem;
+  }
 }
 
 .video-sidebar {
+  border-right: 1px solid #ffffff10;
+  font-size: .85rem;
   padding: .5rem;
 
+  @media (width > 600px) {
+    font-size: 1rem;
+    min-width: 12rem;
+  }
+
   h1 {
-    font-size: 1.85rem;
+    font-size: 1.25rem;
+    @media (width > 600px) {
+      font-size: 1.85rem;
+    }
   }
 
   ul {
@@ -94,5 +109,29 @@ button:focus-visible {
   li a {
     display: block;
     padding: .5em .25em;
+  }
+}
+
+.video-main {
+  padding-right: 1.5%;
+}
+
+.video-navbar__list a {
+  color: #fff;
+  transition: .3s ease all;
+  &.active, &:active, &:hover {
+    text-decoration: underline;
+  }
+  &:active, &:hover {
+    opacity: .65;
+  }
+
+  span {
+    display: none;
+    visibility: hidden;
+    @media (width > 600px) {
+      display: inline;
+      visibility: visible;
+    }
   }
 }

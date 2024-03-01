@@ -6,7 +6,7 @@ function Interviews() {
     <>
       <h1>Interviews</h1>
       <YouTubePlaylist
-        apiKey="AIzaSyCNCV6xC68ui6fkUvzl4BRNUZWZHm1hWyM"
+        apiKey={import.meta.env.VITE_API_KEY}
         playlistId="PL1j9nnHmLnPIBwdaSjzzYRo7XObIP7DvC"
         uniqueName="Interviews"
       />

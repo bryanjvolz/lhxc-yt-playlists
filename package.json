@@ -3,18 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "build_staging": "PUBLIC_URL=https://www.louisvillehardcore.com/video-test/ react-scripts build",
   "build_production": "PUBLIC_URL=https://www.louisvillehardcore.com/video-test/ react-scripts build",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --base=/",
+    "build": "vite build --base=/video-test/",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@codesweetly/react-youtube-playlist": "^2.0.0",
+    "dotenv": "^16.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
     "react-image-grid-gallery": "^2.0.1",
     "react-router-dom": "^6.22.2"
   },

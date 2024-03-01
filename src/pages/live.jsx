@@ -6,7 +6,7 @@ function Live() {
     <>
       <h1>Live Videos</h1>
       <YouTubePlaylist
-        apiKey="AIzaSyCNCV6xC68ui6fkUvzl4BRNUZWZHm1hWyM"
+        apiKey={import.meta.env.VITE_API_KEY}
         playlistId="PL1j9nnHmLnPI3te3X4QNQw8MkUxl-VwmD"
         uniqueName="LHxC Live"
       />

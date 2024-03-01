@@ -20,23 +20,23 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: `${import.meta.env.BASE_URL}`,
         element: <Live />,
       },
       {
-        path: "audio/",
+        path: `${import.meta.env.BASE_URL}audio/`,
         element: <Audio />,
       },
       {
-        path: "lhxc/",
+        path: `${import.meta.env.BASE_URL}lhxc/`,
         element: <LHXC />,
       },
       {
-        path: "interviews/",
+        path: `${import.meta.env.BASE_URL}interviews/`,
         element: <Interviews />,
       },
       {
-        path: "music-videos/",
+        path: `${import.meta.env.BASE_URL}music-videos/`,
         element: <MusicVideos />,
       },
     ],

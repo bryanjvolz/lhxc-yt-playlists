@@ -6,7 +6,7 @@ function MusicVideos() {
     <>
       <h1>Music Videos</h1>
       <YouTubePlaylist
-        apiKey="AIzaSyCNCV6xC68ui6fkUvzl4BRNUZWZHm1hWyM"
+        apiKey={import.meta.env.VITE_API_KEY}
         playlistId="PL1j9nnHmLnPLyDJgEfaHluGKurnD1AlgH"
         uniqueName="Music Videos"
       />
