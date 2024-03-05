@@ -6,21 +6,21 @@ import Interviews from './pages/interviews.jsx'
 import MusicVideos from './pages/music-videos.jsx'
 import Live from './pages/live.jsx'
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
 import Root from "./routes/root";
 import ErrorPage from './error-page.jsx';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: `${import.meta.env.BASE_URL}`,
+        path: `${import.meta.env.BASE_URL}/`,
         element: <Live />,
       },
       {

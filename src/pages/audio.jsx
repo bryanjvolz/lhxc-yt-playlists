@@ -7,7 +7,7 @@ function Audio() {
       <h1>Audio</h1>
       <YouTubePlaylist
         apiKey={import.meta.env.VITE_API_KEY}
-        playlistId="PL091E99A9C2FE3774"
+        playlistId="PL1j9nnHmLnPL8_VZDFCnfoXHI0itxkuqb"
         uniqueName="Louisville Hardcore/Punk/Indie Rock"
       />
     </>

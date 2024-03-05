@@ -3,10 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "build_production": "PUBLIC_URL=https://www.louisvillehardcore.com/video-test/ react-scripts build",
+  "build_production": "PUBLIC_URL=https://www.louisvillehardcore.com/videos/ react-scripts build",
   "scripts": {
-    "dev": "vite --base=/",
-    "build": "vite build --base=/video-test/",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
