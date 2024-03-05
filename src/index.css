@@ -84,6 +84,7 @@ button:focus-visible {
   border-right: 1px solid #ffffff10;
   font-size: .85rem;
   padding: .5rem;
+  position: relative;
 
   @media (width > 600px) {
     font-size: 1rem;
@@ -110,6 +111,11 @@ button:focus-visible {
     display: block;
     padding: .5em .25em;
   }
+}
+
+.video-navbar {
+  position: sticky;
+  top: 1rem;
 }
 
 .video-main {
